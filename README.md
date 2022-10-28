@@ -56,7 +56,7 @@ This repository contains a set of Jupyter Notebooks describing the steps for
 building a semantic segmentation model based on the U-Net architecture for
 detecting burned areas from fires from optical satellite imagery.
 
-1. [Pre-process](pre-process.ipynb): Image and ground truth data preprocessing and dataset generation
+1. [Pre-process](pre_process.ipynb): Image and ground truth data preprocessing and dataset generation
 2. [Training](training.ipynb): Model training and evaluation
 3. [Prediction](prediction.ipynb): Prediction
-4. [Post-process](post-process.ipynb): Post-processing of prediction results(refining, visual check and vectorization)
+4. [Post-process](post_process.ipynb): Post-processing of prediction results(refining, visual check and vectorization)
