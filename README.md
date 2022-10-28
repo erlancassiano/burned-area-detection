@@ -1,6 +1,6 @@
 
 <br>
-<p align="center">Detection of burned areas using deep learning from satellite images.</p>
+<p align="center">Detection of burned areas using deep learning from satellite images and vectorization.</p>
 
 <p align="center">
   <img height="300" widht="500" src="img/burn.jpg">
@@ -15,18 +15,9 @@ The burned-area-detection project aims to identify and analyze the affected
 areas after a fire incident. It allows us to understand incident behavior to
 take action shortly.
 
-The number of uncontrolled fires has increased significantly in the last few
-years. This kind of environmental catastrophe affects habitat and community on
-several levels. The impact on our environment can be evidenced in a short time
-by measuring the wellness and the evacuation process of the different
-communities living in affected areas. But we are also able to notice its
-effects in the long term due to the impact on nature and local economies. Some
-of the project's principal goals are measuring these affected areas. 
-
-This project uses public satellite images allowing the study of the affected area's evolution across
-time. These images can be download from Google Earth Engine. There are several
-reflectance bands available to use, besides a combination of them can be more
-sensitive to detect burn areas.
+This project uses public satellite images allowing the study of the affected area's and measure the area affected for futher apllicattions, as enviromental warnings.
+The process to identify and vectorize burned area consume a great amount of time and the analist need experience in order to increase the efficiency.
+The aim is to process more than 80% of the area in at maximi 1/10 of the usual time a and use the visual experience of the analist to check and refine the delivery.
 
 ### Normalized Burn Ratio (NBR)
 
@@ -52,8 +43,11 @@ is used to calculate the delta NBR. A higher value of dNBR indicates more
 severe damage, while areas with negative dNBR values may indicate regrowth
 following a fire.
 
-Uses [satproc](https://github.com/dymaxionlabs/satproc) and
-[unetseg](https://github.com/dymaxionlabs/unetseg) Python packages.
+Uses [satproc](https://pypi.org/project/satproc/),
+[unetseg](https://github.com/dymaxionlabs/unetseg),
+[rioxarray](https://github.com/corteva/rioxarray),
+[xarray](https://docs.xarray.dev/en/stable/), and
+[geopandas](https://geopandas.org/en/stable/), Python packages.
 
 
 ## 	:notebook: Notebooks
@@ -62,7 +56,7 @@ This repository contains a set of Jupyter Notebooks describing the steps for
 building a semantic segmentation model based on the U-Net architecture for
 detecting burned areas from fires from optical satellite imagery.
 
-1. [Pre-process](1_Pre-process.ipynb): Image and ground truth data preprocessing and dataset generation
-2. [Training](2_Training.ipynb): Model training and evaluation
-3. [Prediction](3_Prediction.ipynb): Prediction
-4. [Post-process](4_Post-process.ipynb): Post-processing of prediction results
+1. [Pre-process](pre-process.ipynb): Image and ground truth data preprocessing and dataset generation
+2. [Training](training.ipynb): Model training and evaluation
+3. [Prediction](prediction.ipynb): Prediction
+4. [Post-process](post-process.ipynb): Post-processing of prediction results(refining, visual check and vectorization)
