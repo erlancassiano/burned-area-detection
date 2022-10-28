@@ -1,15 +1,3 @@
-*This digital tool is part of the catalog of tools of the **Inter-American Development Bank**. You can learn more about the IDB initiative at [code.iadb.org](https://code.iadb.org/en)*
-
-<p align="center">
-  <img height="200" src="img/logo.png">
-</p>
-
-  # <img height="30" src="https://img.icons8.com/flat-round/64/000000/fire-element.png"/> burned-area-detection  
-  
-
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/dymaxionlabs/burned-area-detection/blob/master/LICENSE.txt)
-
-
 
 <br>
 <p align="center">Detection of burned areas using deep learning from satellite images.</p>
@@ -21,12 +9,7 @@
 <p  align="center">
 • <a  href="#-description">Description</a> •
 <a  href="#notebook-notebooks">Notebooks</a> •
-<a  href="#-about-dymaxion-labs">About Dymaxion Labs</a> •
-<a  href="#handshake-contributing">Contributing</a> •
-<a  href="#page_facing_up-license">License</a> •
 </p>
-
-## <img height="25" src="https://code.iadb.org/sites/default/files/2019-04/31227283.png"/> Description
 
 The burned-area-detection project aims to identify and analyze the affected
 areas after a fire incident. It allows us to understand incident behavior to
@@ -40,8 +23,7 @@ communities living in affected areas. But we are also able to notice its
 effects in the long term due to the impact on nature and local economies. Some
 of the project's principal goals are measuring these affected areas. 
 
-This project uses Sentinel-2 public satellite images. Sentinel-2 has high
-cadence at no cost, allowing the study of the affected area's evolution across
+This project uses public satellite images allowing the study of the affected area's evolution across
 time. These images can be download from Google Earth Engine. There are several
 reflectance bands available to use, besides a combination of them can be more
 sensitive to detect burn areas.
@@ -84,24 +66,3 @@ detecting burned areas from fires from optical satellite imagery.
 2. [Training](2_Training.ipynb): Model training and evaluation
 3. [Prediction](3_Prediction.ipynb): Prediction
 4. [Post-process](4_Post-process.ipynb): Post-processing of prediction results
-
-## <img height="25" src="https://code.iadb.org/sites/default/files/2019-04/31227283.png"/> About Dymaxion Labs
-[Dymaxion Labs](https://dymaxionlabs.com/) leverages AI and Computer Vision to analyze petabytes of geospatial data to understand the physical world. These include optical, SAR and aerial imagery, climate data, and IoT sensors.
-With our grounded, data science based methodology, private companies and the public sector accelerate strategic data-driven decisions from their remote targets.
-### :man_technologist: Authors
-* María Roberta Devesa <ro.devesa@dymaxionlabs.com>
-* Damián Silvani <damian@dymaxionlabs.com>
-
-
-
-## :handshake: Contributing
-
-Bug reports and pull requests are welcome on GitHub at the [issues
-page](https://github.com/dymaxionlabs/burned-area-detection). This project is
-intended to be a safe, welcoming space for collaboration, and contributors are
-expected to adhere to the [Contributor
-Covenant](http://contributor-covenant.org) code of conduct.
-
-## :page_facing_up: License
-
-This project is licensed under Apache 2.0. Refer to [LICENSE.txt](LICENSE.txt).
